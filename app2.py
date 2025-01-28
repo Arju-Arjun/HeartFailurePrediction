@@ -73,7 +73,7 @@ columns_list = [col for col in df.columns if col != 'Unnamed: 0']
 new_data = new_data.reindex(columns=columns_list, fill_value=0)
 
 # Load the saved scaler
-with open('scaler.pkl', 'rb') as scaler_file:
+with open('Scaler.pkl', 'rb') as scaler_file:
     loaded_scaler = pickle.load(scaler_file)
 
 # Scale the new data
